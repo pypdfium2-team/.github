@@ -39,6 +39,19 @@ for image, suffix in pdfium.render_pdf_topil(pdffile):
 ```
 
 
+### Advantages
+
+* Liberal license: Apache 2.0 or BSD-3-Clause (at your choice), and various similar licenses for external components of PDFium
+* Minimal runtime dependencies (only `PIL`, which is optional)
+* Rendering is fast, outperforming `ghostscript` and `poppler`. In terms of speed, pypdfium2 can almost reach `pymupdf`.
+* Multiple choices for the rendering return type:
+    * [`PIL.Image.Image`](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image)
+    * [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes)
+    * ctypes ubyte array
+* Can process encrypted (password-protected) PDFs
+* State-of-the-art setup infrastructure (PEP [517](https://peps.python.org/pep-0517/)/[518](https://peps.python.org/pep-0518/) compliant)
+
+
 ### References
 
 * [pypdfium2 repository](https://github.com/pypdfium2-team/pypdfium2) (with [support model code](https://github.com/pypdfium2-team/pypdfium2/tree/main/src/pypdfium2/_helpers) and [examples](https://github.com/pypdfium2-team/pypdfium2/tree/main/examples))
