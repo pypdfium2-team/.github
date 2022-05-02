@@ -12,6 +12,7 @@ This is the place of development for a liberal-licensed Python PDF rendering lib
 * `Windows` amd64 / arm64 / win32
 * `macOS` x86_64 (10.11+) / arm64 (11.0+)
 * `Linux (glibc 2.17+)` x86_64 / i686 / aarch64 / armv7l
+* `Linux (musl 1.2+)` x86_64 / i686
 
 
 ### Installation
