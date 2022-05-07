@@ -44,7 +44,7 @@ for image, suffix in pdfium.render_pdf_topil(pdffile):
 
 * Liberal license: Apache 2.0 or BSD-3-Clause (at your choice), and various similar licenses for external components of PDFium.
 * Wide range of supported platforms and Python versions.
-* Minimal runtime dependencies (only `PIL`, which is optional).
+* Minimal runtime dependencies.
 * Rendering is fast, outperforming `ghostscript` and `poppler`. In terms of speed, pypdfium2 can almost reach `pymupdf`.
 * Multiple choices for the rendering return type:
     * [`PIL.Image.Image`](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image)
