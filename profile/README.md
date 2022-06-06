@@ -24,19 +24,29 @@ python3 -m pip install pypdfium2
 
 ### Example
 
-```python3
+```python
 import pypdfium2 as pdfium
 
-pdffile = 'path/to/your_doc.pdf'
+# Load a document
+filepath = "tests/resources/multipage.pdf"
+pdf = pdfium.PdfDocument(filepath)
 
 # render a single page (in this case: the first one)
-with pdfium.PdfContext(pdffile) as pdf:
-    image = pdfium.render_page_topil(pdf, 0)
-    image.save('output.jpg')
+page = pdf.get_page(0)
+pil_image = page.render_topil()
+pil_image.save("output.jpg")
+page.close()
 
 # render multiple pages concurrently (in this case: all)
-for image, suffix in pdfium.render_pdf_topil(pdffile):
-    image.save('output_%s.jpg' % suffix)
+page_indices = [i for i in range(len(pdf))]
+renderer = pdf.render_topil(
+    page_indices = page_indices,
+)
+for image, index in zip(renderer, page_indices):
+    image.save("output_%02d.jpg" % index)
+    image.close()
+
+pdf.close()
 ```
 
 
@@ -51,12 +61,11 @@ for image, suffix in pdfium.render_pdf_topil(pdffile):
     * [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes)
     * ctypes ubyte array
 * Can process encrypted (password-protected) PDFs.
-* State-of-the-art setup infrastructure (PEP [517](https://peps.python.org/pep-0517/)/[518](https://peps.python.org/pep-0518/) compliant).
 
 
 ### References
 
-* [pypdfium2 repository](https://github.com/pypdfium2-team/pypdfium2) (with [support model code](https://github.com/pypdfium2-team/pypdfium2/tree/main/src/pypdfium2/_helpers) and [examples](https://github.com/pypdfium2-team/pypdfium2/tree/main/examples))
+* [pypdfium2 repository](https://github.com/pypdfium2-team/pypdfium2) (with [support model code](https://github.com/pypdfium2-team/pypdfium2/tree/main/src/pypdfium2/_helpers)
 * [pypdfium2 documentation](https://pypdfium2.readthedocs.io/en/stable/)
 * [ctypes documentation](https://docs.python.org/3/library/ctypes.html)
 * [pdfium repository](https://pdfium.googlesource.com/pdfium/+/refs/heads/main)
