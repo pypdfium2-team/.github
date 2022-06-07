@@ -65,7 +65,7 @@ pdf.close()
 
 ### References
 
-* [pypdfium2 repository](https://github.com/pypdfium2-team/pypdfium2) (with [support model code](https://github.com/pypdfium2-team/pypdfium2/tree/main/src/pypdfium2/_helpers)
+* [pypdfium2 repository](https://github.com/pypdfium2-team/pypdfium2) (with [support model code](https://github.com/pypdfium2-team/pypdfium2/tree/main/src/pypdfium2/_helpers))
 * [pypdfium2 documentation](https://pypdfium2.readthedocs.io/en/stable/)
 * [ctypes documentation](https://docs.python.org/3/library/ctypes.html)
 * [pdfium repository](https://pdfium.googlesource.com/pdfium/+/refs/heads/main)
