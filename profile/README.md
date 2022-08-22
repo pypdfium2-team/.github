@@ -69,10 +69,12 @@ pdf.close()
 * [pypdfium2 documentation](https://pypdfium2.readthedocs.io/en/stable/)
 * [ctypes documentation](https://docs.python.org/3/library/ctypes.html)
 * [pdfium repository](https://pdfium.googlesource.com/pdfium/+/refs/heads/main)
-* [pdfium documentation](https://developers.foxit.com/resources/pdf-sdk/c_api_reference_pdfium/group___f_p_d_f_i_u_m.html)
+* [pdfium documentation](https://developers.foxit.com/resources/pdf-sdk/c_api_reference_pdfium/group___f_p_d_f_i_u_m.html)[^2]
 * [pdfium merge requests](https://pdfium-review.googlesource.com/)
 * [pdfium bug tracker](https://bugs.chromium.org/p/pdfium/issues/list)
 * [pdfium mailing list](https://groups.google.com/g/pdfium)
 
 
 [^1]: Older versions might work but are not tested.
+
+[^2]: Outdated, unfortunately. Please look at the comments in PDFium's header files instead (`public/*.h`).
