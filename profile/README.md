@@ -31,15 +31,16 @@ import pypdfium2 as pdfium
 filepath = "tests/resources/multipage.pdf"
 pdf = pdfium.PdfDocument(filepath)
 
-# render a single page (in this case: the first one)
+# render a single page to a PIL image (in this case: the first one)
 page = pdf.get_page(0)
-pil_image = page.render_topil()
+pil_image = page.render_to(pdfium.BitmapConv.pil_image)
 pil_image.save("output.jpg")
 page.close()
 
-# render multiple pages concurrently (in this case: all)
+# concurrently render multiple pages to PIL images (in this case: all)
 page_indices = [i for i in range(len(pdf))]
-renderer = pdf.render_topil(
+renderer = pdf.render_to(
+    pdfium.BitmapConv.pil_image,
     page_indices = page_indices,
 )
 for image, index in zip(renderer, page_indices):
