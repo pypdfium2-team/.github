@@ -75,8 +75,6 @@ pdf.close()
 * [pdfium bug tracker](https://bugs.chromium.org/p/pdfium/issues/list)
 * [pdfium mailing list](https://groups.google.com/g/pdfium)
 
-For pdfium documentation, please look at the comments in its public header files (`public/*.h`). [^2]
+For pdfium documentation, please look at the comments in its public header files (`public/*.h`).
 
 [^1]: PyPy might work but is not tested. Similarly, pypdfium2 might still be compatible with Python 3.5 / 3.4, but this is not tested either.
-
-[^2]: There are still some [outdated Foxit HTML docs](https://developers.foxit.com/resources/pdf-sdk/c_api_reference_pdfium/group___f_p_d_f_i_u_m.html), but using them is strongly discouraged.
