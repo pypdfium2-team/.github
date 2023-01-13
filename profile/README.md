@@ -11,7 +11,7 @@ This is the place of development for a liberal-licensed Python PDF rendering lib
 * [CPython](https://github.com/python/cpython) >= 3.6 [^1]
 * `Windows` amd64 / arm64 / win32
 * `macOS` x86_64 (10.13+) / arm64 (11.0+)
-* `Linux (glibc 2.17+)` x86_64 / i686 / aarch64 / armv7l
+* `Linux (glibc 2.26+)` x86_64 / i686 / aarch64 / armv7l
 * `Linux (musl 1.2+)` x86_64 / i686
 
 
@@ -71,12 +71,12 @@ pdf.close()
 * [pypdfium2 documentation](https://pypdfium2.readthedocs.io/en/stable/)
 * [ctypes documentation](https://docs.python.org/3/library/ctypes.html)
 * [pdfium repository](https://pdfium.googlesource.com/pdfium/+/refs/heads/main)
-* [pdfium documentation](https://developers.foxit.com/resources/pdf-sdk/c_api_reference_pdfium/group___f_p_d_f_i_u_m.html)[^2]
 * [pdfium merge requests](https://pdfium-review.googlesource.com/)
 * [pdfium bug tracker](https://bugs.chromium.org/p/pdfium/issues/list)
 * [pdfium mailing list](https://groups.google.com/g/pdfium)
 
+For pdfium documentation, please look at the comments in its public header files (`public/*.h`). [^2]
 
-[^1]: PyPy might work but is not tested. Similarly, pypdfium2 might still be compatible with Python 3.5 and 3.4, but this is not tested either.
+[^1]: PyPy might work but is not tested. Similarly, pypdfium2 might still be compatible with Python 3.5 / 3.4, but this is not tested either.
 
-[^2]: Outdated, unfortunately. Please look at the comments in PDFium's header files instead (`public/*.h`).
+[^2]: There are still some [outdated Foxit HTML docs](https://developers.foxit.com/resources/pdf-sdk/c_api_reference_pdfium/group___f_p_d_f_i_u_m.html), but using them is strongly discouraged.
