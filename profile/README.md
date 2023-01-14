@@ -60,7 +60,6 @@ pdf.close()
 * Rendering is fast, outperforming [`ghostscript`](https://github.com/ArtifexSoftware/ghostpdl) and [`poppler`](https://gitlab.freedesktop.org/poppler/poppler). In terms of speed, pypdfium2 can almost reach [`pymupdf`](https://github.com/pymupdf/PyMuPDF).
 * Multiple choices for the rendering return type:
     * [`ctypes.c_ubyte`](https://docs.python.org/3/library/ctypes.html#fundamental-data-types) [array](https://docs.python.org/3/library/ctypes.html#arrays)
-    * [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes)
     * [`PIL.Image.Image`](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image)
     * [`numpy.ndarray`](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html)
 
