@@ -32,15 +32,15 @@ filepath = "tests/resources/multipage.pdf"
 pdf = pdfium.PdfDocument(filepath)
 
 # render a single page to a PIL image (in this case: the first one)
-page = pdf.get_page(0)
-pil_image = page.render_to(pdfium.BitmapConv.pil_image)
+page = pdf[0]
+pil_image = page.render(pdfium.PdfBitmap.to_pil, scale=2)
 pil_image.save("output.jpg")
 page.close()
 
 # concurrently render multiple pages to PIL images (in this case: all)
 page_indices = [i for i in range(len(pdf))]
-renderer = pdf.render_to(
-    pdfium.BitmapConv.pil_image,
+renderer = pdf.render(
+    pdfium.PdfBitmap.to_pil,
     page_indices = page_indices,
 )
 for image, index in zip(renderer, page_indices):
