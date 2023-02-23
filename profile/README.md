@@ -76,4 +76,4 @@ pdf.close()
 
 For pdfium documentation, please look at the comments in its public header files (`public/*.h`).
 
-[^1]: PyPy might work but is not tested. Similarly, pypdfium2 might still be compatible with Python 3.5 / 3.4, but this is not tested either.
+[^1]: PyPy might work but is not tested.
