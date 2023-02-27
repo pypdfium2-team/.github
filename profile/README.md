@@ -33,7 +33,7 @@ pdf = pdfium.PdfDocument(filepath)
 
 # render a single page to a PIL image (in this case: the first one)
 page = pdf[0]
-pil_image = page.render(pdfium.PdfBitmap.to_pil, scale=2)
+pil_image = page.render(scale=2).to_pil()
 pil_image.save("output.jpg")
 page.close()
 
