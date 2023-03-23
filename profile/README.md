@@ -14,6 +14,8 @@ This is the place of development for a liberal-licensed Python PDF rendering lib
 * `Linux (glibc 2.26+)` x86_64 / i686 / aarch64 / armv7l
 * `Linux (musl 1.2+)` x86_64 / i686
 
+(as of Mar 2023)
+
 
 ### Installation
 
