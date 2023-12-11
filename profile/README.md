@@ -30,26 +30,13 @@ python3 -m pip install pypdfium2
 import pypdfium2 as pdfium
 
 # Load a document
-filepath = "tests/resources/multipage.pdf"
-pdf = pdfium.PdfDocument(filepath)
+pdf = pdfium.PdfDocument("tests/resources/multipage.pdf")
 
-# render a single page to a PIL image (in this case: the first one)
-page = pdf[0]
-pil_image = page.render(scale=2).to_pil()
-pil_image.save("output.jpg")
-page.close()
-
-# concurrently render multiple pages to PIL images (in this case: all)
-page_indices = [i for i in range(len(pdf))]
-renderer = pdf.render(
-    pdfium.PdfBitmap.to_pil,
-    page_indices = page_indices,
-)
-for image, index in zip(renderer, page_indices):
-    image.save("output_%02d.jpg" % index)
-    image.close()
-
-pdf.close()
+# Loop over pages and render
+for i in range(len(pdf)):
+    page = pdf[i]
+    image = page.render(scale=4).to_pil()
+    image.save(f"output_{i:03d}.jpg")
 ```
 
 
