@@ -3,7 +3,7 @@
 
 # pypdfium2-team
 
-This is the place of development for a liberal-licensed Python PDF rendering library suitable for inclusion in non-copyleft projects, powered by PDFium.
+This is the place of development for a liberal-licensed Python PDF rendering library, powered by PDFium.
 
 
 ### Supported Environment
@@ -42,7 +42,7 @@ for i in range(len(pdf)):
 
 ### Advantages
 
-* Liberal license: `Apache-2.0` or `BSD-3-Clause` (at your choice), and various similar licenses for external components of PDFium.
+* Liberal license: `Apache-2.0` / `BSD-3-Clause`, and various other liberal licenses for third-party components of PDFium.
 * Wide range of supported platforms and Python versions.
 * No mandatory runtime dependencies.
 * Can process encrypted (password-protected) PDFs.
