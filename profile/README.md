@@ -11,8 +11,8 @@ This is the place of development for a liberal-licensed Python PDF rendering lib
 * [CPython](https://github.com/python/cpython) >= 3.6 [^1]
 * `Windows` amd64 / arm64 / win32
 * `macOS` x86_64 (10.13+) / arm64 (11.0+)
-* `Linux (glibc 2.26+)` x86_64 / i686 / aarch64 / armv7l
-* `Linux (musl 1.2+)` x86_64 / i686
+* `Linux (glibc)` x86_64 / i686 / aarch64 / armv7l
+* `Linux (musl)` x86_64 / i686 / aarch64
 
 (as of Mar 2023)
 
