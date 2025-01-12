@@ -1,4 +1,4 @@
-<!-- SPDX-FileCopyrightText: 2022 geisserml <geisserml@gmail.com> -->
+<!-- SPDX-FileCopyrightText: 2025 geisserml <geisserml@gmail.com> -->
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
 # pypdfium2-team
@@ -17,7 +17,7 @@ This is the place of development for a liberal-licensed Python PDF rendering lib
 These are the platforms that we support with wheels / pre-built binaries.
 
 In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.
-In case of exotic platforms, building pdfium is down to the embedder or distributor.
+In case of exotic platforms, this is down to the embedder or distributor.
 
 
 ### Installation
