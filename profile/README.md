@@ -15,9 +15,7 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 * `Linux (musl)` x86_64 / i686 / aarch64
 
 These are the platforms that we support with wheels / pre-built binaries.
-
-In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.
-In case of exotic platforms, this is down to the embedder or distributor.
+In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^4]
 
 
 ### Installation
@@ -71,3 +69,4 @@ For pdfium documentation, please look at the comments in its public header files
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
 [^2]: As of Jan 2025
 [^3]: PyPy might work but is not tested.
+[^4]: This is down to the embedder or distributor.
