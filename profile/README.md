@@ -15,7 +15,7 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 * `Linux (musl)` x86_64 / i686 / aarch64
 
 These are the platforms that we support with wheels / pre-built binaries.
-In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^4]
+In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform. [^4]
 
 
 ### Installation
