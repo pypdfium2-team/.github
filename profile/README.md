@@ -6,16 +6,16 @@
 This is the place of development for a liberal-licensed[^1] Python PDF rendering library, powered by PDFium.
 
 
-### Supported Environment [^2]
+### Supported Environment
 
-* [CPython](https://github.com/python/cpython) >= 3.6 [^3]
+* [CPython](https://github.com/python/cpython) >= 3.6 [^2]
 * `Windows` amd64 / arm64 / win32
 * `macOS` x86_64 (10.13+) / arm64 (11.0+)
 * `Linux (glibc)` x86_64 / i686 / aarch64 / armv7l
 * `Linux (musl)` x86_64 / i686 / aarch64
 
 These are the platforms that we support with wheels / pre-built binaries.
-In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform. [^4]
+In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.
 
 
 ### Installation
@@ -67,6 +67,4 @@ for i in range(len(pdf)):
 For pdfium documentation, please look at the comments in its public header files (`public/*.h`).
 
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
-[^2]: As of Jan 2025
-[^3]: PyPy might work but is not tested.
-[^4]: This is down to the embedder or distributor.
+[^2]: PyPy might work but is not tested.
