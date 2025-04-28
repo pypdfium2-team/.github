@@ -49,7 +49,7 @@ for i in range(len(pdf)):
 * Wide range of supported platforms and Python versions.
 * No mandatory runtime dependencies.
 * Can process encrypted (password-protected) PDFs.
-* Rendering is fast, outperforming [`ghostscript`](https://github.com/ArtifexSoftware/ghostpdl) and [`poppler`](https://gitlab.freedesktop.org/poppler/poppler). In terms of speed, pypdfium2 can almost reach [`pymupdf`](https://github.com/pymupdf/PyMuPDF).
+* Fast rendering (probably outperforming [`poppler`](https://gitlab.freedesktop.org/poppler/poppler) and [`ghostscript`](https://github.com/ArtifexSoftware/ghostpdl)). In terms of speed, pypdfium2 can almost reach [`pymupdf`](https://github.com/pymupdf/PyMuPDF).
 * Multiple choices for the rendering return type:
     * [`ctypes.c_ubyte`](https://docs.python.org/3/library/ctypes.html#fundamental-data-types) [array](https://docs.python.org/3/library/ctypes.html#arrays)
     * [`PIL.Image.Image`](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image)
