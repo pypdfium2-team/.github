@@ -17,7 +17,7 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 * `iOS` arm64 (+ arm64 / x86_64 simulators) (experimental, untested)
 
 These are the platforms supported with pre-built binaries.
-In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.
+In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^3]
 
 
 ### Installation
@@ -70,3 +70,4 @@ For pdfium documentation, please look at the comments in its public header files
 
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
 [^2]: PyPy might work but is not tested.
+[^3]: Other rare operating systems / CPU architectures exist, such as `FreeBSD`, `Illumos`, `Haiku`, `SerenityOS` / `PowerPC`, `s390x`, `LoongArch`, but it is not possible to provide pre-builds for any arbitrary platform under the roof of this project. In particular, we are limited to targets covered by Google's toolchain/sysroots, or native GitHub actions runners, and by the portability of pdfium's code itself (notably, there might be endianness bugs on big-endian platforms, pdfium's Readme acknowledges this). Building/packaging pdfium for other platforms is down to porting experts or technically accomplished end users from the respective projects. Where the host system provides pdfium and standard `ctypes.util.find_library()` means can find it, pypdfium2's setup theoretically should work even on unhandled platforms (if not, please file a bug report). Moreover, on non-covered CPUs of supported OSes (or more generally: any host supported by pdfium's GN build system), the [native sourcebuild](https://github.com/pypdfium2-team/pypdfium2?tab=readme-ov-file#install-source-selfbuilt) should work if system-level dependencies are installed (pypdfium2's `setup.py` will attempt this as a last resort).
