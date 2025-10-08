@@ -10,7 +10,7 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 
 * [CPython](https://github.com/python/cpython) >= 3.6 [^2]
 * `Windows` amd64 / arm64 / win32
-* `macOS` x86_64 (10.13+) / arm64 (11.0+)
+* `macOS` x86_64 / arm64 (11.0+)
 * `Linux (glibc)` x86_64 / i686 / aarch64 / armv7l
 * `Linux (musl)` x86_64 / i686 / aarch64
 * `Android` arm64_v8a / armeabi_v7a (+ x86_64 / x86 simulators) (experimental)
