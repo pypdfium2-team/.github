@@ -6,7 +6,7 @@
 This is the place of development for a liberal-licensed[^1] Python PDF rendering library, powered by PDFium.
 
 
-### Supported Environment
+### Supported Environments (subset)
 
 * [CPython](https://github.com/python/cpython) >= 3.6 [^2]
 * `Windows` amd64 / arm64 / win32
@@ -14,9 +14,9 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 * `Linux (glibc)` x86_64 / i686 / aarch64 / armv7l
 * `Linux (musl)` x86_64 / i686 / aarch64
 * `Android` arm64_v8a / armeabi_v7a (+ x86_64 / x86 simulators) (experimental)
-* `iOS` arm64 (+ arm64 / x86_64 simulators) (experimental, untested)
+<!-- * `iOS` arm64 (+ arm64 / x86_64 simulators) (experimental, untested) -->
 
-These are the platforms supported with pre-built binaries.
+These are the platforms supported with pre-built pdfium-binaries.
 In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^3]
 
 
@@ -69,5 +69,13 @@ for i in range(len(pdf)):
 For pdfium documentation, please look at the comments in its public header files (`public/*.h`).
 
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
+
 [^2]: PyPy might work but is not tested.
-[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. In particular, we are limited to targets covered by Google's toolchain/sysroots, or native GitHub actions runners, and by the portability of pdfium's code itself (notably, there might be endianness bugs on big-endian platforms, pdfium's Readme acknowledges this). Building/packaging pdfium for other platforms is down to porting experts or technically accomplished end users from the respective projects. Where the host system provides pdfium and standard `ctypes.util.find_library()` means can find it, pypdfium2's setup theoretically should work even on unhandled platforms (if not, please file a bug report). Moreover, on non-covered CPUs of supported OSes, the [native sourcebuild](https://github.com/pypdfium2-team/pypdfium2/?tab=readme-ov-file#with-self-built-pdfium) should work if system-level dependencies are installed (pypdfium2's `setup.py` will attempt this as a last resort).
+
+[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it may not be feasible to provide pre-builds for any arbitrary platform under the roof of this project. To be able to provide builds for a platform, we need at least one of the following:
+    
+    - Google's toolchain supports the platform, and a sysroot is available
+    - A native GitHub Actions runner is available for the platform, or a runner-emulator combination that achives nearly native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
+    - An emulated PyPA container with static clang cross-compiler that runs on the host architecture but is pre-configured to build for the target architecture.
+    
+    Building/packaging pdfium for other platforms is down to porting experts or technically accomplished end users from the respective projects. Where the host system provides pdfium and standard `ctypes.util.find_library()` means can find it,         pypdfium2's setup theoretically should work even on unhandled platforms (if not, please file a bug report). Moreover, on non-covered CPUs of supported OSes, the [native sourcebuild](https://github.com/pypdfium2-team/pypdfium2/?tab=readme-ov-file#with-self-built-pdfium) should work if system-level dependencies are installed (pypdfium2's `setup.py` will attempt this as a last resort).
