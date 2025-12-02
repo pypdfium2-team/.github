@@ -72,11 +72,11 @@ For pdfium documentation, please look at the comments in its public header files
 
 [^2]: PyPy might work but is not tested.
 
-[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To be able to provide builds for a platform, we need at least one of the following:
+[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. In particular, to be able to provide builds for a platform, we need at least one of the following:
     
-    - Google's toolchain supports the platform, and a sysroot is available
+    - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
     - An emulated PyPA container with static clang cross-compiler is available (running on the host architecture, but being pre-configured to cross-compile for the target architecture), and produces working builds
     
     In addition, pdfium's code itself needs to work on the platform in question (notably, there might be endianness bugs on big-endian CPUs, pdfium's Readme acknowledges this).
-    Building/packaging pdfium for platforms that do not match one of the above conditions is down to porting experts or technically accomplished end users from the respective projects. Where the host system provides pdfium and standard `ctypes.util.find_library()` means can find it, pypdfium2's setup theoretically should work even on unhandled platforms (if not, please file a bug report). Moreover, on non-covered CPUs of supported OSes, the [native sourcebuild](https://github.com/pypdfium2-team/pypdfium2/?tab=readme-ov-file#with-self-built-pdfium) should work if system-level dependencies are installed (pypdfium2's `setup.py` will attempt this as a last resort).
+    Building/packaging pdfium for platforms that do not fall under one of the above conditions is down to porting experts or technically accomplished end users from the respective projects. Where the host system provides pdfium and standard `ctypes.util.find_library()` means can find it, pypdfium2's setup theoretically should work even on unhandled platforms (if not, please file a bug report). Moreover, on non-covered CPUs of supported OSes, the [native sourcebuild](https://github.com/pypdfium2-team/pypdfium2/?tab=readme-ov-file#with-self-built-pdfium) should work if system-level dependencies are installed (pypdfium2's `setup.py` will attempt this as a last resort).
