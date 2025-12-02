@@ -76,7 +76,7 @@ For pdfium documentation, please look at the comments in its public header files
     
     - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
-    - An emulated PyPA container with static clang cross-compiler is available (running on the host architecture, but being pre-configured to cross-compile for the target architecture), and produces working builds
+    - An emulated PyPA container with static clang cross-compiler is available (running on the host architecture, but being pre-configured for cross-compilation to the target architecture), and produces working builds
     
     In addition, pdfium's code itself needs to work on the platform in question (notably, there might be endianness bugs on big-endian CPUs, pdfium's Readme acknowledges this).
     Building/packaging pdfium for platforms that do not fall under one of the above conditions is down to porting experts or technically accomplished end users from the respective projects. Where the host system provides pdfium and standard `ctypes.util.find_library()` means can find it, pypdfium2's setup theoretically should work even on unhandled platforms (if not, please file a bug report). Moreover, on non-covered CPUs of supported OSes, the [native sourcebuild](https://github.com/pypdfium2-team/pypdfium2/?tab=readme-ov-file#with-self-built-pdfium) should work if system-level dependencies are installed (pypdfium2's `setup.py` will attempt this as a last resort).
