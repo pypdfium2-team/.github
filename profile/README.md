@@ -72,7 +72,7 @@ For pdfium documentation, please look at the comments in its public header files
 
 [^2]: PyPy might work but is not tested.
 
-[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. In particular, to be able to provide builds for a platform, we need at least one of the following:
+[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
     
     - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
