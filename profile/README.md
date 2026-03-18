@@ -13,10 +13,10 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 * `macOS` x86_64 / arm64 (11.0+)
 * `Linux (glibc)` x86_64 / i686 / aarch64 / armv7l
 * `Linux (musl)` x86_64 / i686 / aarch64
-* `Android` arm64_v8a / armeabi_v7a (+ x86_64 / x86 simulators) (experimental)
-<!-- * `iOS` arm64 (+ arm64 / x86_64 simulators) (experimental, untested) -->
+* `Android` arm64_v8a / armeabi_v7a
+<!-- * `iOS` arm64 (experimental, untested) -->
 
-These are the platforms supported with pre-built pdfium-binaries.
+These are the platforms supported with pre-built packages.
 In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^3]
 
 
