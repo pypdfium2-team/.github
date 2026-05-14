@@ -39,7 +39,7 @@ for i in range(len(pdf)):
 
 ### Characteristics
 
-* Liberal license (`BSD-3-Clause`, `Apache-2.0`, plus various other open-source licenses for third-party components of PDFium.)
+* Liberal license (`BSD-3-Clause`, `Apache-2.0`, plus various other open-source licenses for dependencies of PDFium.)
 * Wide range of supported platforms and Python versions.
 * No mandatory runtime dependencies.
 * Can process encrypted (password-protected) PDFs.
