@@ -8,7 +8,7 @@ Some of its build dependencies (`pypdfium2-ctypesgen`, `gn-dist`) are also maint
 
 pypdfium2 provides pre-built packages for many platforms, making it easy to install, and scripts to build PDFium from scratch.<br/>
 See our [current release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest) for an up-to-date list of platforms.
-In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^2]
+In principle, pypdfium2 may run anywhere provided PDFium is available on the platform in question.[^2]
 
 pypdfium2 supports CPython `>= 3.8`.
 Even `>= 3.6` or other implementations of Python (e.g. PyPy) might work but are not routinely tested.
