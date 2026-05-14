@@ -43,7 +43,7 @@ for i in range(len(pdf)):
 ```
 
 
-### Advantages
+### Characteristics
 
 * Liberal license (`BSD-3-Clause`, `Apache-2.0`, plus various other open-source licenses for third-party components of PDFium.)
 * Wide range of supported platforms and Python versions.
