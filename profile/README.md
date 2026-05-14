@@ -1,23 +1,16 @@
 <!-- SPDX-FileCopyrightText: 2025 geisserml <geisserml@gmail.com> -->
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-# pypdfium2-team
+# pypdfium2 organization
 
 This is the place of development for a liberal-licensed[^1] Python PDF rendering library, powered by PDFium.
+Some of its build dependencies (`pypdfium2-ctypesgen`, `gn-dist`) are also maintained under the roof of this organization.
 
+pypdfium2 provides pre-built packages for many platforms, making it easy to install, and scripts to build PDFium from scratch.
+See our [current release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest) for an up-to-date list of platforms.
+In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^2]
 
-### Supported Environments (subset)
-
-* [CPython](https://github.com/python/cpython) >= 3.6 [^2]
-* `Windows` amd64 / arm64 / win32
-* `macOS` x86_64 / arm64 (11.0+)
-* `Linux (glibc)` x86_64 / i686 / aarch64 / armv7l
-* `Linux (musl)` x86_64 / i686 / aarch64
-* `Android` arm64_v8a / armeabi_v7a
-<!-- * `iOS` arm64 (experimental, untested) -->
-
-These are the platforms supported with pre-built packages.
-In principle, pypdfium2 may run anywhere provided you are able to procure a pdfium build for the platform.[^3]
+pypdfium2 supports CPython `>= 3.8`. (Even `>= 3.6` or other implementations of Python, e.g. PyPy, might work but are not routinely tested.)
 
 
 ### Installation
@@ -70,9 +63,7 @@ For pdfium documentation, please look at the comments in its public header files
 
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
 
-[^2]: PyPy might work but is not tested.
-
-[^3]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos (OpenIndiana/OmniOS)`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
+[^2]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos (OpenIndiana/OmniOS)`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
     
     - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
