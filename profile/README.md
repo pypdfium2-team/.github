@@ -6,8 +6,8 @@
 This is the place of development for a liberal-licensed[^1] Python PDF rendering library, powered by PDFium.<br/>
 Some of its build dependencies (`pypdfium2-ctypesgen`, `gn-dist`) are also maintained under the roof of this organization.
 
-pypdfium2 provides pre-built packages for many platforms,[^2] making it easy to install, and scripts to build PDFium from scratch.<br/>
-Check out our [release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest) for an up-to-date list of platforms.
+pypdfium2 provides pre-built packages for many platforms, making it easy to install, and scripts to build PDFium from scratch.<br/>
+Check out our [release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest) for an up-to-date list of platforms.[^2]
 In principle, pypdfium2 may run anywhere provided PDFium is available on the system in question.
 
 pypdfium2 supports CPython `>= 3.8`.
@@ -64,7 +64,7 @@ For pdfium documentation, please look at the comments in its public header files
 
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
 
-[^2]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos (OpenIndiana/OmniOS)`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `PowerPC (big-endian)`, `Elbrus 2000`, ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
+[^2]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos (OpenIndiana/OmniOS)`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `Elbrus 2000`, plus big endian variants of some CPUs (e.g. ppc64), ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
     
     - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
