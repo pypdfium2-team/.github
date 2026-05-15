@@ -64,7 +64,7 @@ For pdfium documentation, please look at the comments in its public header files
 
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
 
-[^2]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos (OpenIndiana/OmniOS)`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `Elbrus 2000`, plus big endian variants of some CPUs (e.g. ppc64), ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
+[^2]: Other rare operating systems / CPUs exist, such as `FreeBSD`, `Illumos (OpenIndiana/OmniOS)`, `AIX`, `IBM z/OS`, `Haiku`, `SerenityOS` / `MIPS`, `SPARC`, `Elbrus 2000`, plus big-endian variants of some CPUs (e.g. ppc64), ... but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
     
     - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
