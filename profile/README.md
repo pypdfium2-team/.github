@@ -4,7 +4,7 @@
 # pypdfium2 organization
 
 This is the place of development for a liberal-licensed[^1] Python PDF rendering library, powered by PDFium.<br/>
-Some of its build dependencies (`pypdfium2-ctypesgen`, `gn-dist`) are also maintained under the roof of this organization.
+Some of its build dependencies (a ctypesgen fork, and GN builds) are also maintained under the roof of this organization.
 
 pypdfium2 provides pre-built packages for many platforms, making it easy to install, and scripts to build PDFium from scratch.<br/>
 Check out our [release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest) for an up-to-date list of platforms.[^2]
