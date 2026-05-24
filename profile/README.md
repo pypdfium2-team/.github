@@ -11,7 +11,7 @@ Check out our [release assets](https://github.com/pypdfium2-team/pypdfium2/relea
 In principle, pypdfium2 may run anywhere provided PDFium is available on the system in question.
 
 pypdfium2 supports CPython `>= 3.8`.
-Even `>= 3.6` or other implementations of Python (e.g. PyPy) might work but are not routinely tested.
+(Even `>= 3.6` or other implementations of Python, e.g. PyPy, might work but are not routinely tested.)
 
 
 ### Installation
