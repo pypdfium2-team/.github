@@ -7,7 +7,7 @@ This is the place of development for a liberal-licensed[^1] Python PDF rendering
 Some of its build dependencies (a ctypesgen fork, and GN builds) are also maintained under the roof of this organization.
 
 pypdfium2 provides pre-built packages for many platforms, making it easy to install, and scripts to build PDFium from scratch.<br/>
-Check out our [release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest) for an up-to-date list of platforms.[^2]
+Check out our comprehensive [platform support page](https://pypdfium2-team.github.io/pypdfium2/platforms.html) or current [release assets](https://github.com/pypdfium2-team/pypdfium2/releases/latest).[^2]
 In principle, pypdfium2 may run anywhere provided PDFium is available on the system in question.
 
 pypdfium2 supports CPython `>= 3.8`.
