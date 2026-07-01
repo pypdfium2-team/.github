@@ -68,7 +68,7 @@ For pdfium documentation, please look at the comments in its public header files
     
     - Google's toolchain handles the platform, and a sysroot is available
     - A native GitHub Actions runner is available, or a runner-emulator combination that achives near-native performance (e.g. aarch64 to armv7l, or x86_64 to i686)
-    - An emulated PyPA container is available, and the target builds with static clang (running on the host architecture, but being pre-configured for cross-compilation to the target architecture).
+    - An emulated PyPA container is available, and the target builds with static clang (running on the host architecture, but being pre-configured for cross-compilation to the target architecture)
     
     Some degree of support from upstream's build config is required in any case.
     
