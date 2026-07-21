@@ -62,7 +62,7 @@ for i in range(len(pdf)):
 
 For pdfium documentation, please look at the comments in its public header files (`public/*.h`).
 
-### No AI Policy
+### No AI
 
 > [!IMPORTANT]
 > AI content is banned from this organization. This policy applies to all member projects.
