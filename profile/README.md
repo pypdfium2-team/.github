@@ -62,6 +62,12 @@ for i in range(len(pdf)):
 
 For pdfium documentation, please look at the comments in its public header files (`public/*.h`).
 
+### No AI Policy
+
+> [!IMPORTANT]
+> AI content is banned from this organization. This policy applies to all member projects.
+> See pypdfium2's [`README.md`](https://github.com/pypdfium2-team/pypdfium2#no-ai-issues-and-prs) for more information.
+
 [^1]: Disclaimer: This is not legal advice. While we hope this project is useful to others, there is ABSOLUTELY NO WARRANTY. It is the embedder's responsibility to check on licensing. See also [GitHub's disclaimer](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#disclaimer).
 
 [^2]: Other rare operating systems / CPUs may exist, but it is not feasible to provide pre-builds for any arbitrary platform under the roof of this project. To do so, we need at least one of the following:
