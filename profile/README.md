@@ -11,7 +11,7 @@ Check out our comprehensive [platform support page](https://pypdfium2-team.githu
 In principle, pypdfium2 may run anywhere provided PDFium is available on the system in question.
 
 We aim for CPython `>= 3.6` compatibility, though only `>= 3.8` is routinely tested in CI.<br>
-Other implementations of Python (e.g. PyPy) might work but are not actively tested.
+Other implementations of Python (e.g. PyPy) might also work but are not actively tested.
 
 ### Installation
 
